@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Academic Webpage" />
+    <meta name="author" content="Jiawei Zhang" />
+    <title id="title"></title>
+
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
+
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
+        rel="stylesheet" />
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
+    <link type="text/css" href="static/css/main.css" rel="stylesheet" />
+
+    <!-- Bootstrap core JS-->
+    <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
+
+    <!-- For Compatability -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    
+    <!-- Markdown -->
+    <script type="text/javascript" src="static/js/marked.min.js"></script>
+
+    <!-- Mathematics -->
+    <script>
+        // See https://docs.mathjax.org/en/latest/index.html for more details.
+        MathJax = {
+            tex: {
+                packages: {},              // extensions to use
+                inlineMath: [              // start/end delimiter pairs for in-line math
+                    ['$', '$'],
+                    ['\\(', '\\)']
+                ],
+                displayMath: [             // start/end delimiter pairs for display math
+                    ['$$', '$$'],
+                    ['\\[', '\\]']
+                ],
+                processEscapes: false,      // use \$ to produce a literal dollar sign
+                processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
+                processRefs: true,         // process \ref{...} outside of math mode
+                digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,    // pattern for recognizing numbers
+                tags: 'all',              // or 'ams' or 'all'
+                tagSide: 'right',          // side for \tag macros
+                tagIndent: '0.8em',        // amount to indent tags
+                useLabelIds: true,         // use label name rather than tag for ids
+                maxMacros: 10000,          // maximum number of macro substitutions per expression
+                maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
+                // baseURL:                   // URL for use with links to tags (when there is a <base> tag in effect)
+                // (document.getElementsByTagName('base').length === 0) ? '' : String(document.location).replace(/#.*$/, ''),
+                formatError:               // function called when TeX syntax errors occur
+                    (jax, err) => jax.formatError(err)
+            }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <!-- Core JS-->
+    <script type="text/javascript" src="static/js/scripts.js"></script>
+    <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
+
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+        <div class="container px-5">
+            <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
+            <!-- <a href="#page-top"><img src="static/assets/img/CUMT_LOGO.svg" style="width: 11rem;"></a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                MENU
+                <i class="bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#page-top">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#publications">PUBLICATIONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#Projects">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#Working">Working Expriences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-lg-3" href="#awards">AWARDS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Top Section -->
+    <section class="top-section" style="background-image: url('static/assets/img/uestc_3.jpg');">
+        <div class="top-section-content">
+            <div class="container px-5">
+                <h2 id="top-section-bg-text" class="text-white display-3 lh-1 font-alt"></h2>
+            </div>
+        </div>
+    </section>
+    <!-- Top Section -->
+
+    <!-- Photo -->
+    <div class="container px-5">
+        <div id="avatar">
+            <img class="shadow" src="static/assets/img/IMG_1023.jpg">
+        </div>
+    </div>
+    <!-- Photo -->
+    
+    <!-- Home -->
+    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
+        <div class="container px-5">
+            <header>
+                <h2 id="home-subtitle"> </h2>
+                <span style="font-size: 2em; color: #007bff; font-weight: bold;">
+                    Jiawei Zhang | 张家伟
+                </span>
+                <br><br>
+                Email: zhanggavei0426@gmail.com
+                <br><br>
+                I received my Master's degree from the University of Electronic Science and Technology of China in 2024, supervised by Prof. <a href="https://scholar.google.com/citations?user=uAkKmZUAAAAJ&hl=en&oi=sra">Jienan Chen</a> and Prof. Tingyong Wu. Before
+                that, I received my bachelor's degree in Communication Engineering from Chongqing Jiaotong University in 2021.
+                <br><br>
+                I am working as an Autonomous Driving Algorithm Engineer at <a href="https://www.xpeng.com/">XPeng Automotive Technology Co., Ltd.</a> since 2024.07. My primary responsibilities included the design and implementation of autonomous driving algorithm architectures for robotics systems, covering perception,
+                localization, mapping, etc.
+                <br><br>
+                Recently, I am looking for a Ph.D. position in the following research trip.
+                <br><br>
+                <span style="font-size: 1.5em; color: #000000; font-weight: bold;">
+                    Research Interests
+                </span>
+                <br>
+                The integration of AI in communications, MIMO, B5G/6G, etc.
+                <br><br>
+                <span style="font-size: 1.5em; color: #000000; font-weight: bold;">
+                    Education
+                </span>
+                <br>
+                M.S. in Electronic and Information Engineering, University of Electronic Science and Technology of China. 2021-2024.
+                <br>
+                National Key Laboratory of Science and Technology on Communications, supervised by Jienan Chen and Tingyong Wu
+                <br><br>
+                B.Sc. in Communication Engineering, Chongqing Jiao tong University. 2017-2021.
+                GPA: 3.89, ranking: 2/120±.
+                <!-- <span class="bi bi-list"></span> -->
+            </header>
+            <div class="main-body" id="home-md"></div>
+        </div>
+    </section>
+    <!-- Home -->
+
+    <!-- Publications -->
+<section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
+    <div class="container px-5">
+        <header>
+            <h2 id="publications-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;PUBLICATIONS</h2>
+        </header>
+        <div class="main-body" id="publications-md" style="font-size:1.1em">
+            <ul>
+                <li>
+                    <span style="font-weight: 700">J. Zhang</span>, F. Wu, Y. Yang, and J. Chen, “Beam tracking: A channel charting and neighborhood search based method,” in <i>GLOBECOM 2023-2023 IEEE Global Communications Conference</i>. IEEE, 2023, pp. 807-812.
+                </li>
+                <li>
+                    <span style="font-weight: 700">J. Zhang</span>, S. Wang, J. Chen, et al. “Channel Charting based Fast Beam Tracking Design and Implementation,” in <i>IEEE Transactions on Cognitive Communications and Networking</i>. (Under review)
+                </li>
+                <li>
+                    China Patent: A channel charting based beam tracking method and system. Patent No. ZL202311626161.7
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+    <!-- Publications  -->
+
+    <!-- Projects -->
+    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="Projects">
+        <div class="container px-5">
+            <header>
+                <h2 id="Projects-subtitle"><i class="bi bi-search"></i>Seleted Projects </h2>
+            </header>
+            <div class="main-body" id="Projects-md"></div>
+            <ul>
+                <li>
+                    <span style="font-size: 1.5em; color: #137ce6; font-weight: bold;">
+                        Research and implementation of beam tracking algorithms for B5G millimeter wave communications
+                    </span>
+                </li>
+                    A channel charting-based beam tracking algorithm for mmWave
+                    communications is proposed, reducing scan overhead and improving accuracy via
+                    autoencoder-driven feature mapping, mapping tables, and validated through simu
+                    lations and real-world 26 GHz communication system field tests. The proposed algorithm
+                    significantly reduces scanning complexity while maintaining high prediction accuracy, achieving an
+                    accuracy of 98.27% in simulation environments. Compared to existing methods, the proposed method
+                    can reduce beam scanning times by up to 55.9%.
+                    <br>
+                    <div style="text-align: center;">
+                        <img class="shadow" src="static/assets/img/framework-v2.png" style="max-width: 80%; height: auto;">
+                    </div>
+                    <br>
+                    Our communication system prototype framework:
+                    <div style="text-align: center;">
+                        <img class="shadow" src="static/assets/img/26GHz-real-system.png" style="max-width: 80%; height: auto;">
+                    </div>
+                    <br>
+                    The field test video: 
+                <!-- 嵌入本地视频 -->
+                    <div class="video-container mt-3" style="text-align: center;">
+                        <video width="560" height="315" controls>
+                            <source src="./static/assets/video/beam-tracking.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+            </ul>
+            
+            <ul>
+                <li>
+                    <span style="font-size: 1.5em; color: #137ce6; font-weight: bold;">
+                        Robotic intelligent navigation
+                    </span>
+                </li>
+                    Deployed perception, localization, and mapping algorithms on the Orin chip, leveraging computer vision and AI technologies to enable intelligent point-to-point navigation for humanoid robots. 
+                    We showcased the results at Tsinghua University, receiving extensive positive feedback.
+                    <br>
+                    The field test video: 
+                <!-- 嵌入本地视频 -->
+                    <div class="video-container mt-3" style="text-align: center;">
+                        <video width="560" height="315" controls>
+                            <source src="./static/assets/video/tsinghua-demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+            </ul>
+
+        </div>
+    </section>
+    <!-- Projects -->
+
+    <!-- Working Exprience -->
+    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="Working">
+        <div class="container px-5">
+            <header>
+                <h2 id="Working-subtitle"><i class="bi bi-bricks"></i>&nbsp;Working Expriences</h2>
+            </header>
+            <div class="main-body" id="Working-md">
+                <div style="margin-bottom: 30px;">
+        <h4 style="color: #2980b9; margin-top: 25px; display: flex; justify-content: space-between;">
+            <span style="font-weight: bold;">XPeng Automotive Technology Co., Ltd.</span>  
+            <span style="font-size: 0.9em; color: #555;">May 2024 – Now</span>
+        </h4>
+        <p style="font-style: italic; margin-bottom: 5px;">Position: Autonomous Driving Algorithm Engineer (Robotics)</p>
+        <ul style="margin-top: 10px; padding-left: 20px;">
+            <li style="margin-bottom: 8px;">Involved in the architecture of robotic navigation algorithms, covering perception, localization, mapping, etc.</li>
+            <li style="margin-bottom: 8px;">Innovatively applied an E2E model to replace conventional cloud mapping algorithms.</li>
+            <li style="margin-bottom: 8px;">Implemented an auto tracking function for a robot, with the project showcased in a demonstration at Tsinghua University.</li>
+            <li style="margin-bottom: 8px;">Involved in the restructuring of the architecture for the robot autonomous driving business.</li>
+        </ul>
+    </div>
+
+    <div style="margin-bottom: 30px;">
+        <h4 style="color: #2980b9; margin-top: 25px; display: flex; justify-content: space-between;">
+            <span style="font-weight: bold;">Toyota China, Autonomous Driving Safety, Intern</span>  
+            <span style="font-size: 0.9em; color: #555;">Dec 2023 – Feb 2024</span>
+        </h4>
+        <ul style="margin-top: 10px; padding-left: 20px;">
+            <li style="margin-bottom: 8px;">Responsible for implementing and developing products within the intelligent cockpit.</li>
+        </ul>
+    </div>
+
+    <div style="margin-bottom: 30px;">
+        <h4 style="color: #2980b9; margin-top: 25px;display: flex; justify-content: space-between;">
+            <span style="font-weight: bold;">Zeekr Intelligent Technology Co., Ltd., Intern</span>  
+            <span style="font-size: 0.9em; color: #555;">May 2023 – Aug 2023</span>
+        </h4>
+        <ul style="margin-top: 10px; padding-left: 20px;">
+            <li style="margin-bottom: 8px;">Responsible for the development of some modules in the vehicle operating system.</li>
+        </ul>
+    </div>
+            </div>
+        </div>
+    </section>
+    <!-- Working Exprience  -->
+
+    <!-- Awards -->
+    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="awards">
+        <div class="container px-5">
+            <header>
+                <h2 id="awards-subtitle"><i class="bi bi-award-fill"></i>AWARDS </h2>
+            </header>
+            <div class="main-body" id="awards-md" style="font-size:1.2em">
+                <ul>
+                <li>
+                    Provincial First Prize, Lanqiao Cup National Programming Competition
+                </li>
+                <li>
+                    Provincial First Prize, National Undergraduate Mathematical Modeling Competition
+                </li>
+                <li>
+                    Honorable Mention, Mathematical Contest in Modeling (MCM), USA
+                </li>
+                <li>
+                    China Programming Ability Test. Score: 90/100
+                </li>
+            </ul>
+            </div>
+            
+        </div>
+    </section>
+    <!-- Awards -->
+
+    <!-- Footer-->
+    <footer class="bg-bottom text-center py-5">
+        <div class="container px-5">
+            <div class="text-white-50 small">
+                <div id="copyright-text" class="mb-2"></div>
+                <a id="github-link" href="https://github.com/senli1073">Github</a>
+                <span class="mx-1">&middot;</span>
+                <a id="license-link" href="https://github.com/senli1073/senli1073.github.io/blob/main/LICENSE">License</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
