@@ -1,13 +1,7 @@
-<!-- - National Scholarship of Graduate Student, 2024.
+- Provincial First Prize, Lanqiao Cup National Programming Competition
 
-- First-prize Scholarship of CUMT, 2024.
+- Provincial First Prize, National Undergraduate Mathematical Modeling Competition
 
-- First-prize Scholarship of CUMT, 2023.
+- Honorable Mention, Mathematical Contest in Modeling (MCM), USA
 
-- Freshman Scholarship of CUMT, 2022.
-
-- Excellent Graduation Project of Jiangsu Province, 2022.
-
-- First-prize Enterprise Scholarship of CUMT, 2020.
-
-- First-prize Scholarship of CUMT, 2019. -->
+- China Programming Ability Test. Score: 90/100
