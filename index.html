@@ -216,12 +216,12 @@
                     can reduce beam scanning times by up to 55.9%.
                     <br>
                     <div style="text-align: center;">
-                        <img class="shadow" src="static/assets/img/framework-v2.png" style="max-width: 80%; height: auto;">
+                        <img class="shadow" src="static/assets/img/framework-v2.png" style="max-width: 70%; height: auto;">
                     </div>
                     <br>
                     Our communication system prototype framework:
                     <div style="text-align: center;">
-                        <img class="shadow" src="static/assets/img/26GHz-real-system.png" style="max-width: 80%; height: auto;">
+                        <img class="shadow" src="static/assets/img/26GHz-real-system.png" style="max-width: 60%; height: auto;">
                     </div>
                     <br>
                     The field test video: 
@@ -231,6 +231,38 @@
                             <source src="./static/assets/video/beam-tracking.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
+                    </div>
+            </ul>
+
+            <ul>
+                <li>
+                    <span style="font-size: 1.5em; color: #137ce6; font-weight: bold;">
+                        Simulation and Blind Demodulation System for Starlink Ku-Band Downlink OFDM Signals
+                    </span>
+                </li>
+                    This project focuses on the physical-layer simulation and blind demodulation of Starlink satellite Ku-band downlink signals.
+                     It covers end-to-end signal modeling, channel simulation, multi-stage time-frequency synchronization, and blind demodulation. 
+                     A dedicated visualization software was developed to support parameter customization and real-time signal observation. 
+                     The main objective is to realistically reproduce the signal transmission characteristics under real-world channel conditions and to 
+                     validate the robustness of self-developed blind demodulation algorithms against large frequency offsets and Doppler effects.
+                    <br>
+                    - Signal Modeling: Simulated Starlink Ku-band OFDM signal frame structure, including synchronization sequences (PSS/SSS) and user data blocks.<br>
+                    - Channel Simulation: Modeled complex channel effects such as AWGN, frequency offset, and Doppler shift.<br>
+                    - Multi-Stage Time-Frequency Synchronization & Blind Demodulation: Implemented a coarse frequency offset estimation based on comb pilot tones, PSS-based sliding correlation timing, and fine frequency compensation using S&C algorithms to achieve high-precision synchronization and demodulation.<br>
+                    <br>
+                    System Architecture Diagram:
+                    <div style="text-align: center;">
+                        <img class="shadow" src="static/assets/img/starlink_signal.png" style="max-width: 60%; height: auto;">
+                    </div>
+                    <br>
+                    Spectrum Distribution:
+                    <div style="text-align: center;">
+                        <img class="shadow" src="static/assets/img/frequency.png" style="max-width: 40%; height: auto;">
+                    </div>
+                    <br>
+                    Simulation Result, Constellation Comparison:
+                    <div style="text-align: center;">
+                        <img class="shadow" src="static/assets/img/simulation_res.png" style="max-width: 70%; height: auto;">
                     </div>
             </ul>
             
@@ -243,6 +275,11 @@
                     Deployed perception, localization, and mapping algorithms on the Orin chip, leveraging computer vision and AI technologies to enable intelligent point-to-point navigation for humanoid robots. 
                     We showcased the results at Tsinghua University, receiving extensive positive feedback.
                     <br>
+                    What did I do:
+                    <br>
+                    - <b>Trained the lane line detection model, drivable space model and objection detection model based on MobileNet, yolo and so on.</b><br>
+                    - Built up the perception algorithm pipeline for the whole project and necessary algorithm baseline comparison tools.<br>
+                    - Research the latest model for further project development, <b>such as VLA based on generative model.</b><br>
                     The field test video: 
                 <!-- 嵌入本地视频 -->
                     <div class="video-container mt-3" style="text-align: center;">
